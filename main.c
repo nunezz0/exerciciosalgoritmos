@@ -1,17 +1,20 @@
-//Faça um algoritmo que solicite ao úsuario um valor e exiba o dobro do valor.
+//Faça um algoritmo que calcule a velocidade média de um trajeto com base na distância percorrida e no tempo (em decimal) usado para isso.
 #include <stdio.h>
 #include <locale.h>
 
-int main()
-{
-    setlocale( LC_ALL, "Portuguese" );
+int main(){
+setlocale( LC_ALL, "Portuguese");
 
-    float num, dobro;
+float distancia, tempo, velocidade;
 
-    printf( "Entre com um número: " );
-    scanf( "%f", &num );
+printf( "Entre com distância: ");
+scanf( "%f", &distancia );
 
-    dobro = num * 2;
+printf( "Entre com tempo: ");
+scanf( "%f", &tempo );
 
-    printf("\nO dobro donúmero é: %f\n", dobro);
+velocidade = distancia / tempo;
+
+printf( "\nSua velocidade média: %f\n", velocidade );
+
 }
