@@ -1,15 +1,17 @@
+//Faça um algoritmo que solicite ao úsuario um valor e exiba o dobro do valor.
 #include <stdio.h>
 #include <locale.h>
 
-int main(){
+int main()
+{
     setlocale( LC_ALL, "Portuguese" );
 
-    float num, metade;
+    float num, dobro;
 
-    printf( "Entre com um número: ");
+    printf( "Entre com um número: " );
     scanf( "%f", &num );
 
-    metade = num / 2;
+    dobro = num * 2;
 
-    printf( "\nA metade do número é: %f\n", metade );
+    printf("\nO dobro donúmero é: %f\n", dobro);
 }
